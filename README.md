@@ -1,0 +1,1 @@
+- install python3.10 [`numba` RuntimeError: Cannot install on Python version 3.11.2; only versions >=3.7,<3.11 are supported]
