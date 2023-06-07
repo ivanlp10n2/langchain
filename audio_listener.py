@@ -31,7 +31,14 @@ def _get_configs(local_path, _vars):
 
 audio_file_path, apikey = _get_configs("env_vars.ini", ["audio_path", "apikey"])
 
+print(f"variables {audio_file_path}, {apikey}")
+
 AudioTranscriber = download_loader("AudioTranscriber")
 
 loader = AudioTranscriber()
-documents = loader.load_data(file=Path(audio_file_path))
+path_audio = Path(audio_file_path)
+print(str(path_audio))
+documents = loader.load_data(file=path_audio)
+
+print(documents)
+
